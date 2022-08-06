@@ -440,6 +440,7 @@ function fetch(uri: string, headers: Record<string, string>) {
 				https: {
 					rejectUnauthorized: false,
 				},
+				localAddress: Config.values.bind,
 			});
 
 			gotStream
